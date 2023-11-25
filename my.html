@@ -4,27 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first portfolio</title>
+    <link rel="stylesheet" href="my.css" />
   </head>
   <body>
     <nav>
-      <div class="logo">SAINT EMEKA</div>
+      <div class="logo">SAINT <span style="color: #0077cc">EMEKA</span></div>
 
       <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="nav-items">Home</a></li>
+        <li><a href="about.html" class="nav-items">About</a></li>
+        <li><a href="work.html" class="nav-items">Work</a></li>
+        <li><a href="resume.html" class="nav-items">Resume</a></li>
+        <li><a href="contact.html" class="nav-items">Contact</a></li>
       </ul>
     </nav>
 
     <br /><br />
-    <hr />
 
-    <header>
-      <h1>SAINT EMEKA</h1>
-      <p>Software developer</p>
-    </header>
     <br /><br />
 
     <section>
@@ -40,9 +36,9 @@
     <section>
       <h2>Skills</h2>
       <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
+        <li class="skill">HTML5</li>
+        <li class="skill">CSS3</li>
+        <li class="skill">JavaScript</li>
         <!-- Add more skills as needed -->
       </ul>
 
@@ -61,17 +57,19 @@
     <section>
       <h2>Projects</h2>
       <ul>
-        <li><a href="#">Project 1</a> - Description of project 1.</li>
-        <li><a href="#">Project 2</a> - Description of project 2.</li>
+        <li>
+          <a href="#" class="project-item">Project 1</a> - Description of
+          project 1.
+        </li>
+        <li>
+          <a href="#" class="project-item">Project 2</a> - Description of
+          project 2.
+        </li>
         <!-- Add more projects as needed -->
       </ul>
     </section>
 
-    <form
-      action="mailto:your.email@example.com"
-      method="post"
-      enctype="text/plain"
-    >
+    <form>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required /><br /><br />
 
@@ -86,20 +84,27 @@
     </form>
     <br /><br />
 
-    <hr />
     <footer>
       <h2>Contact</h2>
       <p>Email: Saintobinna62@gmail.com</p>
 
       <p>
         Linkedin:
-        <a href="https://www.linkedin.com/feed/" target="_blank"
+        <a
+          href="https://www.linkedin.com/feed/"
+          target="_blank"
+          class="footer-button"
           >LinkedIn Profile</a
         >
       </p>
       <p>
         GitHub:
-        <a href="https://github.com/saintobinna" target="_blank"
+        <a
+          href="https://github.com/saintobinna"
+          target="_blank"
+          cl
+          cl
+          class="footer-button"
           >GitHub Profile</a
         >
       </p>
