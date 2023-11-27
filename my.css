@@ -1,28 +1,27 @@
 body {
-  font-family: roboto;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f5f9fa;
 }
 
-nav {
-  background-color: #333;
+nav,
+ul li {
+  display: inline;
   color: #fff;
   padding: 15px;
-  text-align: center;
 }
 
 .logo {
+  color: rgb(189, 216, 240);
+  margin-left: 30px;
   font-size: 1.5em;
   font-weight: bold;
 }
 
 .nav-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
-
-  margin-top: 10px;
+  margin: -15px 0 0 700px;
 }
 
 .nav-list li {
@@ -31,7 +30,7 @@ nav {
 
 .nav-list a {
   text-decoration: none;
-  color: #fff;
+  color: #005580;
   font-weight: bold;
 }
 
@@ -61,18 +60,24 @@ ul {
   padding: 0;
 }
 
-li {
-  margin-bottom: 10px;
-  transition: all 2s;
+.about-me {
+  color: #756e6e;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0 200px;
 }
 
-li a:hover {
-  margin-bottom: 20px;
+.nav-list li a {
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+
+.nav-list li a:hover {
+  padding: 20px;
   font-style: italic;
   font-size: 20px;
   background-color: #fff;
-  padding: 50px;
-  padding: 2px 5px;
+
   color: #0077cc;
   border-radius: 10px;
 }
@@ -95,30 +100,46 @@ li {
   transition: margin-bottom 0.3s;
 }
 
-.skill {
-  background-color: #555;
+.skill a {
+  background-color: #005580;
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.skill a:hover {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #005580;
+
   padding: 20px;
 }
 
-.skill li:hover {
-  margin-bottom: 20px;
-}
-
 iframe {
-  margin-left: 10%;
+  margin: 150px 0 10% 0;
   width: 80%;
   height: 500px;
   border: none;
+  border-radius: 20px;
 }
 
 .project-item {
+  color: #005580;
+  font-weight: 800;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  padding: 10px;
 
   transition: all 0.3s;
+}
+
+.project-cont {
+  margin-bottom: 100px;
 }
 
 .project-item:hover {
